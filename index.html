@@ -36,11 +36,11 @@
 
 
           <label for="Card" class="form-label">Card</label>
-          <input type="text" id="Card" class="form-control" placeholder="xxxx-xxxx-xxxx" aria-label="Card">
+          <input type="text" id="Card" class="form-control" placeholder="xxxx-xxxx-xxxx" pattern="\d{4}-\d{4}-\d{4}-\d{4}" aria-label="Card">
         </div>
         <div class="col-md-3">
           <label for="CVC" class="form-label">CVC</label>
-          <input type="text" id="CVC" class="form-control" placeholder="xxx" aria-label="CVC">
+          <input type="text" id="CVC" pattern="\d{3}" class="form-control" placeholder="xxx" aria-label="CVC">
         </div>
         <div class="col-md-4 mb-3">
           <label for="Amount" class="form-label">Amount</label>
@@ -114,10 +114,10 @@
           </div>
         </div>
         <div class="col-12 boder-top boder-secondary p-3 d-md-flex justify-content-md-end bg-secondary-subtle">
-          <button class="btn btn-secondary mr-2"type="cancel">
+          <button class="btn btn-secondary m-3"type="cancel">
             Cancel
           </button>
-          <button class="btn btn-primary"type="submit">
+          <button class="btn btn-primary m-3"type="submit">
             Send
           </button>
         </div>
